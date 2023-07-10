@@ -1,0 +1,8 @@
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\bin\Debug\Calc_Sebas.exe.config
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\bin\Debug\Calc_Sebas.exe
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\bin\Debug\Calc_Sebas.pdb
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\obj\Debug\Calc_Sebas.csproj.AssemblyReference.cache
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\obj\Debug\Calc_Sebas.csproj.SuggestedBindingRedirects.cache
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\obj\Debug\Calc_Sebas.csproj.CoreCompileInputs.cache
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\obj\Debug\Calc_Sebas.exe
+C:\Users\jogos\Desktop\Antony Jogos\Calculadora-Noite\Calc_Sebas\obj\Debug\Calc_Sebas.pdb
