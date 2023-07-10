@@ -13,9 +13,6 @@
              Agora pedimos para o usuário digitar o segundo valor,
              E aí efetuar uma operação matemática com base nos valores e operador informado pelo usuário, retornar este cálculo para o usuário.*/
 
-            Console.WriteLine("Digite o primeiro valor: ");
-            valorDigitado = Console.ReadLine();
-
             /*Essa linha vai verificar se é um número inteiro, se for igual a variavel numero_inteiro será 1 ou true, se não 0 ou false, 
              * também precisaremos fazer a conversão, poderia usar o Parse mas nesse caso usei o TryParse pois, 
              * ele não lança uma exceção se a conversão falhar.*/
@@ -28,66 +25,15 @@
                 /*Para armazenar vamos usar o método Round da classe Math, aquele que arredonda os valores
                  * então o número 3 alí significa que vou considerar apenas 3 casas apos a vírgula, lembrando que o valor digitado em string
                  * já esta sendo convertido para double.*/
-            }
-            else
-            {
-                Console.WriteLine("Digite um número válido.");
-            }
-
-            Console.WriteLine("Digite a operação matemática desejada: ( /= divisão , * = multiplicação, + = soma, - = subtração e % = MOD resto ): ");
-            operador = Console.ReadLine();
+          
 
             //SEGUNDA ETAPA
             /*É a repetição da primeira etapa com a diferença de que vamos armazenar o segundo valor digitado na variavél valor2
              a validação e a estrutura de decição permanece a mesma*/
-
-            Console.WriteLine("Digite o segundo valor: ");
-            valorDigitado = Console.ReadLine();
-            numero_inteiro = double.TryParse(valorDigitado, out numero);
-            if (numero_inteiro)
-            {
-                valor2 = Math.Round(double.Parse(valorDigitado), 3);
-            }
-            else
-            {
-                Console.WriteLine("Digite um número válido");
-            }
 
             //TERCEIRA ETAPA
             /*Para que consigamos usar os operadores vamos precisar o tipo de operador através de uma switch case
              assim, poderemos criar uma estrutura de decisão e aplicar o operador escolhido.
              Para escrevermos o resultado do cálculo precisamos fazer a concatenação de string e variáveis. 
              Utilizando o auxiliar $, que é declarado antes da aspas da nossa string, 
-             sendo assim qualquer variável que eu queira exibir na minha string basta eu informa-la dentro das chave {minhaVariavel}.*/
-
-            switch (operador)
-            {
-                case "+":
-                    resultado = Math.Round(valor1 + valor2, 3);
-                    Console.WriteLine($"{valor1} {'+'} {valor2} = {resultado}");
-                    break;
-                case "-":
-                    resultado = Math.Round(valor1 - valor2, 3);
-                    Console.WriteLine($"{valor1} {'-'} {valor2} = {resultado}");
-                    break;
-                case "*":
-                    resultado = Math.Round(valor1 * valor2, 3);
-                    Console.WriteLine($"{valor1} {'*'} {valor2} = {resultado}");
-                    break;
-                case "/":
-                    resultado = Math.Round(valor1 / valor2, 3);
-                    Console.WriteLine($"{valor1} {'/'} {valor2} = {resultado}");
-                    break;
-                case "%":
-                    resultado = Math.Round(valor1 % valor2, 3);
-                    Console.WriteLine($"{valor1} {'%'} {valor2} = {resultado}");
-                    break;
-                default:
-                    Console.WriteLine("Digite uma operação válida");
-                    break;
-            }
-
-            Console.ReadKey();
-        }
-    }
-}
+             sendo assim qualquer variável que eu queira exibir na minha string basta eu informa-la dentro das chave {minhaVariavel}.
